@@ -1,0 +1,110 @@
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 870px;
+    width: 100%;
+    min-height: 622px;
+    background-color: var(--gray-blue);
+    background-image: url(../img/bg-about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-detail__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    color: var(--white);
+    background: var(--dark-transp);
+}
+
+.card-detail__text {
+    max-width: 455px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 40px;
+    font-weight: var(--bold);
+    line-height: 32px;
+}
+
+@media (max-width: 1440px) {
+    .card-detail {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .card-detail {
+        min-height: 640px;
+        /*background-image: url(../img/bg-about1024.jpg);*/
+    }
+}
+
+@media (max-width: 962px) {
+    .card-detail {
+        min-height: 650px;
+    }
+
+    .card-detail__content {
+        padding: 34px 40px;
+    }
+
+    .card-detail__text {
+        max-width: calc(366 / (668 - 34 - 34) * 100%);
+    }
+}
+
+@media (max-width: 660px) {
+    .card-detail__text {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .card-detail__btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-detail {
+        display: block;
+        min-height: auto;
+        background-size: 0;
+        background-image: url(../img/bg-about320.jpg);
+        background-color: transparent;
+    }
+
+    .card-detail::before {
+        content: "";
+        display: block;
+        max-width: 100%;
+        margin-bottom: 8px;
+        padding-top: calc(200 / 290 * 100%);
+        background-color: var(--gray-blue);
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-detail__content {
+        padding: 0;
+        color: var(--dark);
+        background-color: transparent;
+    }
+
+    .card-detail__text {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: var(--regular);
+    }
+
+    .card-detail__btn {
+        padding: 11px 14px;
+        min-width: 162px;
+    }
+}

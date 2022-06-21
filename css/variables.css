@@ -1,0 +1,59 @@
+:root {
+    /* шрифты */
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+
+    --default-fs: 16px;
+    --default-lh: 32px;
+
+    /*цвета*/
+        --black: #000000;
+        --dark: #333333;
+        --dark-bg: #222222;
+        --dark-light: #414141;
+        --dark-transp: rgba(0, 0, 0, 0.5);
+        --orange: #FF9900;
+        --orange-transp: rgba(255, 153, 0, 0.7);
+        --orange-dark: #E1670E;
+        --gray-blue: rgba(132, 124, 179, 0.849);
+        --white: #ffffff;
+        --light-gray: #CACACA;
+        --gray: #7C7C7C;
+        --midlle-dark-gray: #595959;
+        --dark-gray: #666666;
+        --light-green: #97EE3F;
+        --gray-border: #dcdcdc;
+
+
+    /*sizes*/
+    --body-min-width: 320px;
+    --container-max-width: 1870px;
+    --container-padding: 50px;
+
+    /*transition*/
+    --short: .3s;
+    --medium-tans: .5s;
+
+    /*hero-swiper*/
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-width: 15px;
+    --swiper-pagination-bullet-height: 15px;
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-bullet-inactive-opacity: .4;
+
+}
+
+@media (max-width: 576px) {
+    :root {
+        --container-padding: 15px;
+        --default-fs: 14px;
+        --default-lh: 28px;
+
+        --swiper-pagination-bullet-width: 10px;
+        --swiper-pagination-bullet-height: 10px;
+    }
+}
